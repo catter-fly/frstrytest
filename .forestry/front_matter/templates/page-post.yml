@@ -1,4 +1,23 @@
 ---
 label: page post
 hide_body: false
-fields: []
+fields:
+- name: comic_page
+  type: file
+  config:
+    maxSize: 64
+  label: comic page
+  description: post the comique
+- name: page_comment
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: page comment
+- name: chartags
+  type: tag_list
+  default: []
+  label: chartags

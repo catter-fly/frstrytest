@@ -1,7 +1,13 @@
 ---
 label: page post
 hide_body: false
+display_field: chpg
 fields:
+- name: chpg
+  type: text
+  config:
+    required: true
+  label: chapter/page
 - name: comic_page
   type: file
   config:
@@ -21,14 +27,3 @@ fields:
   type: tag_list
   default: []
   label: chartags
-- name: chpg
-  type: number
-  label: chpg
-  description: chapter.page
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
-    required: true
